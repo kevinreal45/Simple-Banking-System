@@ -1,6 +1,6 @@
 from django.db import models
 from django.utils.timezone import now
-from django.contrib.auth.models import AbstractUser
+from django.contrib.auth.models import AbstractUser, Group, Permission
 
 # Customer Model
 class Customer(models.Model):
@@ -93,6 +93,18 @@ class User(AbstractUser):
     last_name = models.CharField(max_length=50)
     is_staff = models.BooleanField(default=False)
     is_active = models.BooleanField(default=True)
+    
+    # Resolve the reverse accessor conflicts
+    groups = models.ManyToManyField(
+        Group,
+        related_name="custom_user_groups",  # Custom related name
+        blank=True
+    )
+    user_permissions = models.ManyToManyField(
+        Permission,
+        related_name="custom_user_permissions",  # Custom related name
+        blank=True
+    )
 
     def __str__(self):
         return self.username
