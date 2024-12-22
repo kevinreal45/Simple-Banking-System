@@ -46,9 +46,15 @@ The following tests were performed to ensure the functionality of the Simple Ban
 ### Customer Tests
 
 - **test_get_customer_list**: Passed (Status Code: 200 OK)
-- **test_get_customer_detail**: Passed (Status Code: 200 OK)
+  ![test_get_customer_list](test_screenshots/list_customers.png)
+
 - **test_create_customer**: Passed (Status Code: 201 Created)
+  ![test_create_customer](test_screenshots/create_customers.png)
+
 - **test_update_customer**: Passed (Status Code: 200 OK)
+  ![test_update_customer](test_screenshots/update_customers.png)
+  
 - **test_delete_customer**: Passed (Status Code: 204 No Content)
+  ![test_delete_customer](test_screenshots/delete_customers.png)
 
 All tests were executed successfully, confirming that the API endpoints for accounts, transactions, and customers are functioning as expected.
