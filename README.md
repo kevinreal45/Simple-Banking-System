@@ -28,25 +28,25 @@ _To run the app_
 
 ## Project Implementation
 
-### Models and Their Relationships
+### _Models and Their Relationships_
 
 - **Account**: Represents a bank account with fields such as `account_number`, `account_holder`, `balance`, etc.
 - **Transaction**: Represents a transaction with fields such as `transaction_id`, `account`, `amount`, `transaction_type`, etc. Each transaction is linked to an account, establishing a one-to-many relationship.
 - **Customer**: Represents a customer with fields such as `first_name`, `last_name`, `email`, `phone`, `address`, `password`, etc. Each customer can have multiple accounts, establishing a one-to-many relationship.
 
-### Views/Viewsets and Their Roles
+### _Views/Viewsets and Their Roles_
 
 - **AccountViewSet**: Handles CRUD operations for accounts. It includes methods for listing, retrieving, creating, updating, and deleting accounts.
 - **TransactionViewSet**: Handles CRUD operations for transactions. It includes methods for listing, retrieving, creating, updating, and deleting transactions.
 - **CustomerViewSet**: Handles CRUD operations for customers. It includes methods for listing, retrieving, creating, updating, and deleting customers.
 
-### Serializers and Validation Rules
+### _Serializers and Validation Rules_
 
 - **AccountSerializer**: Serializes account data and includes validation rules for fields such as `account_number` and `balance`.
 - **TransactionSerializer**: Serializes transaction data and includes validation rules for fields such as `amount` and `transaction_type`.
 - **CustomerSerializer**: Serializes customer data and includes validation rules for fields such as `email` and `password`.
 
-### URL Patterns and Their Purpose
+### _URL Patterns and Their Purpose_
 
 - **/accounts/**: Endpoint for listing and creating accounts.
 - **/accounts/{id}/**: Endpoint for retrieving, updating, and deleting a specific account.
@@ -57,11 +57,11 @@ _To run the app_
 
 These URL patterns map to the corresponding viewsets, enabling the API to handle requests for account, transaction, and customer operations.
 
-## Test Results
+## _Test Results_
 
 The following tests were performed to ensure the functionality of the Simple Banking System API:
 
-### Customer Tests
+### _Customer Tests_
 
 - **test_get_customer_list**: Passed (Status Code: 200 OK)
   ![test_get_customer_list](test_screenshots/list_customers.png)
@@ -75,5 +75,5 @@ The following tests were performed to ensure the functionality of the Simple Ban
 - **test_delete_customer**: Passed (Status Code: 204 No Content)
   ![test_delete_customer](test_screenshots/delete_customers.png)
 
-All tests were executed successfully, confirming that the API endpoints for accounts, transactions, and customers are functioning as expected.
+*_All tests were executed successfully, confirming that the API endpoints for accounts, transactions, and customers are functioning as expected._*
 
