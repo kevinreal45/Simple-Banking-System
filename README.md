@@ -7,6 +7,7 @@ This is a mini API project for a simple banking system
 - `151956`
 - `149013`
 - `151775`
+<<<<<<< HEAD
 
 ## Project Implementation
 
@@ -58,3 +59,6 @@ The following tests were performed to ensure the functionality of the Simple Ban
   ![test_delete_customer](test_screenshots/delete_customers.png)
 
 All tests were executed successfully, confirming that the API endpoints for accounts, transactions, and customers are functioning as expected.
+=======
+- `151366`
+>>>>>>> main
