@@ -10,6 +10,22 @@ This is a mini API project for a simple banking system
 - `150914`
 - `151366`
 
+## Project Setup
+  **_Note to work with Django, Working under Virtual env is recommended_**
+  - install a virtual env `pip install virtualenv`
+  - make a virtual environment `mkvirtualenv env_name`
+  - listing all virtual environments `lsvirtualenv`
+  - To activate a virtual env `venv_name\Scripts\activate`
+  - switching to specific virtual environment `workon 'env_name'`
+    
+# Running the app
+_To run the app_
+- Clone the repo
+- In the app directory, switch to the created virtual environment `workon 'env_name'` and in the virtual env, you can begin work.
+- In the virtual env, install django `pip install django` and the rest framework `pip install djangorestframework`
+- Create migrations `py manage.py makemigrations` and migrate them `py migrate.py migrate`
+- Run the server `py manage.py runserver` to interact with the app
+
 ## Project Implementation
 
 ### Models and Their Relationships
